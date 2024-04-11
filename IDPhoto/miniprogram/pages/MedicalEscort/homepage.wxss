@@ -1,0 +1,78 @@
+/* pages/MedicalEscort/homepage.wxss */
+.top-AD-swiper{
+  width: 100%;
+  height: 40vw;
+}
+.swiper-item{
+}
+.image-container{
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+.swiper-item-image{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.announcement-container{
+  height: 40px;
+  display: flex;
+  padding: 10px;
+}
+.announcement-icon{
+  line-height: 20px;
+  height: 20px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  background: #ff4949;
+}
+.announcement-bar {
+  height: 20px;
+  width: calc(100% - 60px);
+  margin-left: 5px;
+  overflow: hidden;
+}
+.announcement-content{
+  color: #22252c;
+  font-size: 14px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden; /* 隐藏超出容器的内容 */
+  white-space: nowrap; /* 禁止文本换行 */
+  text-overflow: ellipsis; /* 文本超出时显示省略号 */
+  animation-iteration-count:infinite;
+  animation-name: moveUp;
+  animation-duration: 5s; /* 调整动画时长 */
+  animation-timing-function: ease; /* 可以根据需要调整动画速度曲线 */
+}

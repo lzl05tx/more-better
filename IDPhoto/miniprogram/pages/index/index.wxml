@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<!-- <view class="container">
+
+  <view class="title">快速了解云开发</view>
+
+  <view class="top_tip">免鉴权接口调用 免部署后台 高并发</view>
+
+  <view class="power" wx:key="title" wx:for="{{powerList}}" wx:for-item="power">
+    <view class="power_info" data-index="{{index}}" bindtap="onClickPowerInfo">
+      <view class="power_info_text">
+        <view class="power_info_text_title">{{power.title}}</view>
+        <view class="power_info_text_tip">{{power.tip}}</view>
+      </view>
+      <image wx:if="{{!power.showItem}}" class="power_info_more" src="../../images/arrow.svg"></image>
+      <image wx:if="{{power.showItem}}" class="power_info_less" src="../../images/arrow.svg"></image>
+    </view>
+    <view wx:if="{{power.showItem}}">
+      <view wx:key="title" wx:for="{{power.item}}">
+        <view class="line"></view>
+        <view class="power_item" bindtap="jumpPage" data-page="{{item.page}}">
+          <view class="power_item_title">{{item.title}}</view>
+          <image class="power_item_icon" src="../../images/arrow.svg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="environment" bindtap="onChangeShowEnvChoose">当前环境 {{ selectedEnv.alias }}</view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view> -->
+<!-- <web-view src = "groupby-41okn-1303094391.tcloudbaseapp.com/html5-fly/play.html" /> -->
+
+<h1 class="title">汉字笔顺书写演示</h1>
+        <div class="actions">
+            <button class="js-animate">书写演示</button>
+            <button class="js-quiz">书写练习</button>
+        </div>
+        <div id="pinyin"></div>
+        <!--汉字所在的田字格背景图-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" id="target">
+            <line x1="0" y1="0" x2="360" y2="0" stroke="#DDD"/>
+            <line x1="0" y1="0" x2="0" y2="360" stroke="#DDD"/>
+            <line x1="0" y1="360" x2="360" y2="360" stroke="#DDD"/>
+            <line x1="360" y1="0" x2="360" y2="360" stroke="#DDD"/>
+        
+            <line x1="0" y1="180" x2="360" y2="180" stroke="#DDD"/>
+            <line x1="180" y1="0" x2="180" y2="360" stroke="#DDD"/>
+            <line x1="0" y1="0" x2="360" y2="360" stroke="#DDD"/>
+            <line x1="0" y1="360" x2="360" y2="0" stroke="#DDD"/>
+        </svg>
+        <div style="clear: both;"></div>
+        <div class="toolsImageBtn">
+
+        </div>
+        <textarea class="form-control" rows="3" name="demo" id="demo" name-id="demo" placeholder="请在这里输入需要练习的生字"></textarea>

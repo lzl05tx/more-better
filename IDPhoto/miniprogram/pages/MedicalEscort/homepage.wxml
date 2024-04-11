@@ -1,0 +1,21 @@
+<!--pages/MedicalEscort/homepage.wxml-->
+<swiper class="top-AD-swiper" autoplay="true" interval="3000" circular="true">
+  <swiper-item class="swiper-item" wx:for="{{topADList}}" wx:key="ADImage">
+  <view class="image-container">
+    <image class="swiper-item-image" src="{{item.ADImage}}" mode="aspectFill" />
+  </view>
+  </swiper-item>
+  <!-- Add more swiper-items for additional slides -->
+</swiper>
+
+<!-- index.wxml -->
+<view class="announcement-container">
+<view class="announcement-icon">
+  公告
+</view>
+  <view class="announcement-bar" wx:if="{{currentAnnouncement}}">
+    <view class="announcement-content">
+      {{currentAnnouncement.content}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e groupby-41okn --n quickstartFunctions --r --project "/Users/lzl/WeChatProjects/IDPhoto" --report_first --report

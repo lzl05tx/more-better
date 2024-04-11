@@ -1,0 +1,5 @@
+<!--pages/wordsStudy.wxml-->
+<view class="container">
+  <button bindtap="chooseFile">选择文件</button>
+  <text>{{fileContent}}</text>
+</view>
